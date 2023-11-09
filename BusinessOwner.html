@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="BusinessOwner.css">
+    <script src="https://kit.fontawesome.com/b99cc85df7.js" crossorigin="anonymous"></script>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous"> -->
+    <!-- <script src="counterparty.js" defer></script> -->
+    <title>Admin</title>
+</head>
+
+<body>
+
+    <section class="theScreen">
+        <nav class="navBar">
+            <div class="logoDiv">
+                <img class="logo" src="/Celaps Logo.png" alt="Our-Logo">
+            </div>
+
+
+            <div class="dashboard">
+                <h3 class="dashboardHeadText">General Subscriber</h3>
+
+                <div class="dashboardmenu active-tab"><i class="fa-solid fa-house"></i>
+                    <h4>Dashboard</h4>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="dashboardmenu">
+                    <i class="fa-solid fa-user-plus"></i>
+                    <h4>Applications </h4>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+                <div class="dashboardmenu">
+                    <i class="fa-solid fa-volume-high"></i>
+                    <h4>Notifications</h4>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+                <div class="dashboardmenu">
+                    <i class="fa-solid fa-clipboard-list"></i>
+                    <h4>Reports</h4>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+                <div class="dashboardmenu">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    <h4>Log Out</h4>
+
+                </div>
+
+            </div>
+
+
+        </nav>
+
+        <div class="mainScreen">
+            <div class="theHeader">
+                <form class="search">
+                    <input class="searchhh" type="search" placeholder="Search...">
+                    <button class="buttn" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+
+
+                <div class="userProfile">
+                    <i class="fa-solid fa-bell bell"></i>
+                    <H3 class="userInitals">HU</H3>
+                    <H3 class="userName">Hello User@gmail.com</H3>
+                </div>
+
+            </div>
+            <div class="content">
+                <div class="Adminn">
+                    <h1>Admin Dashboard</h1>
+                    <form class="adminsearch">
+                        <input class="adminnSearchh" type="search" placeholder="Search...">
+                        <button class="buttn" type="submit"><i
+                                class="fa-solid fa-magnifying-glass search-icon"></i></button>
+                    </form>
+                </div>
+                <div>
+                    <a href="/Index.html">Go to Admin</a>
+                </div>
+
+                <div class="mainDashboard">
+
+                    <div class="firstCard">
+                        <h3>Welcome XYZ</h3>
+                        <p>Here is all your data on this subscription</p>
+                    </div>
+
+                    <div class="stats">
+                        <div class="cards">
+                            <div class="card">
+                                <h3>12</h3>
+                                <p>Number of licenses <br> pending review</p>
+
+                            </div>
+                            <div class="card">
+                                <h3>12</h3>
+                                <p>Number of licenses <br> pending review</p>
+
+                            </div>
+                            <div class="card">
+                                <h3>12</h3>
+                                <p>Number of licenses <br> pending review</p>
+
+                            </div>
+                            <div class="card">
+                                <h3>12</h3>
+                                <p>Number of licenses <br> pending review</p>
+
+                            </div>
+                        </div>
+                        <hr>
+
+                        <div class="twoCards">
+                            <div class="aboutTime">
+
+                                <h6>Permit/License Approval Delay Time</h6>
+                                <h2>2 hrs. 45 mins. 10 secs</h2>
+                            </div>
+                            <div class="LineGraph">
+
+                                <h4>This is your line graph card</h4>
+                            </div>
+                        </div>
+                        <div class="secondTwoCards">
+                            <div class="requirements">
+
+                                <h4>This is your line graph card</h4>
+                            </div>
+                            <div class="requirements">
+
+                                <h4>This is your line graph card</h4>
+                            </div>
+                            <div class="requirements">
+
+                                <h4>This is your line graph card</h4>
+                            </div>
+                            <div class="requirements">
+
+                                <h4>This is your line graph card</h4>
+                            </div>
+                        </div>
+
+                        <div class="twoCards">
+                            <div class="LineGraph">
+
+                                <h4>This is your line graph card</h4>
+                            </div>
+
+                            <div class="aboutTime">
+
+                                <h6>Permit/License Approval Delay Time</h6>
+                                <h2>2 hrs. 45 mins. 10 secs</h2>
+                            </div>
+
+                        </div>
+
+                        <div class="theTable">
+                            <div class="tableText">
+                                <h3>Application History</h3>
+                                <div class="Adminn">
+                                    <div id="filterButtons">
+                                        <button class="filterbtn" onclick="filterTable('allunread')">All &
+                                            Unread</button>
+                                        <button class="filterbtn" onclick="filterTable('date')">Date</button>
+                                        <button class="filterbtn" onclick="filterTable('unmarked')">Unmarked</button>
+                                    </div>
+                                    <form class="adminsearch">
+                                        <input class="adminnSearchh" type="search" placeholder="Search...">
+                                        <button class="buttn" type="submit"><i
+                                                class="fa-solid fa-magnifying-glass search-icon"></i></button>
+                                    </form>
+                                </div>
+
+                            </div>
+                            <table>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Deal Date</th>
+                                    <th>Settlement Date</th>
+                                    <th>Trade Type</th>
+                                    <th>Counterparty</th>
+                                    <th>Custodian</th>
+                                    <th>Security Code</th>
+                                    <th>Price</th>
+                                    <th>Yield</th>
+                                    <th>Volume</th>
+                                    <th>Cash Consideration</th>
+                                    <th>Statutory Charge</th>
+                                    <th>Action</th>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>25 April, 2021</td>
+                                    <td>25 April, 2021</td>
+                                    <td>Standard chartered bank</td>
+                                    <td>Bank</td>
+                                    <td>--</td>
+                                    <td>10,000</td>
+                                    <td>10,000</td>
+                                    <td>200</td>
+                                    <td>50,000</td>
+                                    <td>50,000</td>
+                                    <td>20</td>
+                                    <td class="tableActions">
+                                        <i class="fa-solid fa-pen"></i>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>25 April, 2021</td>
+                                    <td>25 April, 2021</td>
+                                    <td>Standard chartered bank</td>
+                                    <td>Bank</td>
+                                    <td>--</td>
+                                    <td>10,000</td>
+                                    <td>10,000</td>
+                                    <td>200</td>
+                                    <td>50,000</td>
+                                    <td>50,000</td>
+                                    <td>20</td>
+                                    <td class="tableActions">
+                                        <i class="fa-solid fa-pen"></i>
+                                    </td>
+
+                                </tr>
+                            </table>
+                        </div>
+
+                        <section class="Opportunities">
+                            <div>
+                                <h3>Business Opportunities</h3>
+                                <form class="OppoSearch">
+                                    <input class="searchhh" type="search" placeholder="Search Opportunities in CELAP +">
+                                    <button class="buttn" type="submit"><i
+                                            class="fa-solid fa-magnifying-glass searchBtn"></i></button>
+                                </form>
+                            </div>
+                            <div class="oppoCards">
+                                <div class="oppoCard">
+                                    <div>
+                                        <h3>Data Analytics</h3>
+                                        <div>
+                                            <h6>Description:</h6>
+                                            <p>A leading data management company is searching for a data analyst to help
+                                                resolve some migration and big data issues for an existing Oil Block.
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <h6>Requirements:</h6>
+                                            <p>Specialized Category permit, ICT
+                                            </p>
+                                        </div>
+                                        <a href="#">Read more...</a>
+
+                                    </div>
+                                    <div>
+                                        <img src="/Mask group.png" alt="">
+
+                                    </div>
+
+                                </div>
+                                <div class="oppoCard">
+                                    <div>
+                                        <h3>Data Analytics</h3>
+                                        <div>
+                                            <h6>Description:</h6>
+                                            <p>A leading data management company is searching for a data analyst to help
+                                                resolve some migration and big data issues for an existing Oil Block.
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <h6>Requirements:</h6>
+                                            <p>Specialized Category permit, ICT
+                                            </p>
+                                        </div>
+                                        <a href="#">Read more...</a>
+
+                                    </div>
+                                    <div>
+                                        <img src="/Mask group.png" alt="">
+
+                                    </div>
+
+                                </div>
+                                <div class="oppoCard">
+                                    <div>
+                                        <h3>Data Analytics</h3>
+                                        <div>
+                                            <h6>Description:</h6>
+                                            <p>A leading data management company is searching for a data analyst to help
+                                                resolve some migration and big data issues for an existing Oil Block.
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <h6>Requirements:</h6>
+                                            <p>Specialized Category permit, ICT
+                                            </p>
+                                        </div>
+                                        <a href="#">Read more...</a>
+
+                                    </div>
+                                    <div>
+                                        <img src="/Mask group.png" alt="">
+
+                                    </div>
+
+                                </div>
+                                <div class="oppoCard">
+                                    <div>
+                                        <h3>Data Analytics</h3>
+                                        <div>
+                                            <h6>Description:</h6>
+                                            <p>A leading data management company is searching for a data analyst to help
+                                                resolve some migration and big data issues for an existing Oil Block.
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <h6>Requirements:</h6>
+                                            <p>Specialized Category permit, ICT
+                                            </p>
+                                        </div>
+                                        <a href="#">Read more...</a>
+
+                                    </div>
+                                    <div>
+                                        <img src="/Mask group.png" alt="">
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </section>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+
+
+
+
+    </section>
+
+
+
+
+
+
+
+</body>
+
+</html>
