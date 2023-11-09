@@ -775,11 +775,51 @@ td {
 .oppoCard {
     display: flex;
     flex-direction: row;
-    width: 400px;
-    height: 400px;
+    width: 480px;
+    height: 280px;
     border: 1px solid #5CC158;
     border-radius: 12px;
     align-items: center;
     justify-content: center;
     padding: 24px;
+}
+
+.oppoCardTexts {
+    display: flex;
+    flex-direction: column;
+    width: 220;
+}
+
+.oppoCard h3 {
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 8px;
+    color: #5CC158;
+}
+
+.oppoCard h6 {
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.oppoCard p {
+    font-weight: 400;
+    font-size: 12px;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.oppoCard a {
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #5CC158;
+    text-decoration: none;
+}
+
+.oppoCard img {
+    width: 120px;
+    height: 120px;
 }
