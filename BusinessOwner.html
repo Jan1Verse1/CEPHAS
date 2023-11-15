@@ -163,11 +163,14 @@
                             <div class="tableText">
                                 <h3>Application History</h3>
                                 <div class="Adminn">
-                                    <div id="filterButtons">
-                                        <button class="filterbtn" onclick="filterTable('allunread')">All &
-                                            Unread</button>
-                                        <button class="filterbtn" onclick="filterTable('date')">Date</button>
-                                        <button class="filterbtn" onclick="filterTable('unmarked')">Unmarked</button>
+                                    <div class="filterButtons">
+                                        <div class="buttonGroup">
+                                            <button class="tabButton active">All</button>
+                                            <button class="tabButton">Unread</button>
+                                        </div>
+                                        <button class="filterBtn">Date <i class="fa-solid fa-chevron-down"></i></button>
+                                        <button class="filterBtn">Unmarked <i
+                                                class="fa-solid fa-chevron-down"></i></button>
                                     </div>
                                     <form class="adminsearch">
                                         <input class="adminnSearchh" type="search" placeholder="Search...">

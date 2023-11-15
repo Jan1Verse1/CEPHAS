@@ -194,6 +194,15 @@
     margin-right: 10px;
 }
 
+.fa-chevron-down {
+    display: grid;
+    place-content: center;
+    width: 24px;
+    height: 24px;
+    color: #333;
+    margin-right: 10px;
+}
+
 .exclamation1 {
     display: grid;
     place-content: center;
@@ -822,4 +831,56 @@ td {
 .oppoCard img {
     width: 120px;
     height: 120px;
+}
+
+.filterButtons {
+    display: flex;
+    flex-direction: row;
+    margin-right: 24vw;
+}
+
+.filterBtn {
+    display: flex;
+    /* width: 100px; */
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid #333;
+    border-radius: 8px;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px;
+    justify-content: space-between;
+    width: 12vw;
+    justify-items: center;
+}
+
+.tabButton {
+    background-color: #fff;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: max-content;
+    margin: 0px;
+}
+
+.tabButton.active {
+    background-color: #c5c5c5;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: max-content;
+    height: fit-content;
+    margin: 0px;
+}
+
+.buttonGroup {
+    display: flex;
+    flex-direction: row;
+    width: max-content;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 1%;
+    /* margin-bottom: 20px; */
 }
